@@ -56,7 +56,7 @@ rl.question('Enter your question: ', (userInput) => {
     // 13. Check if Pinecone index exists and create if necessary
     // await createPineconeIndex(client, indexName, vectorDimension);
     // 14. Update Pinecone vector store with document embeddings
-    // await updatePinecone(client, indexName, docs);
+    await updatePinecone(client, indexName, docs);
     // 15. Query Pinecone vector store and GPT model for an answer
     await queryPineconeVectorStoreAndQueryLLM(client, indexName, question);
   })();
